@@ -11,8 +11,84 @@
   </head>
 
   <body>
-    
-      
+    <header class="header">
+        <h1 id="title">Online Course Survey Form</h1>
+        <p id="description">Thank you for taking the time to share your thoughts with us</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="survey-section">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+            
+        <div class="survey-section">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+            
+        <div class="survey-section">
+            <label id="number-label" for="number">Age <small>(optional)</small></label>
+            <input type="number" name="age" id="number" min="15" max="99" placeholder="Age" required>
+        </div>
+            
+        <div class="survey-section">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role">
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time work</option>
+                <option value="learner">Full time learner</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+            
+        <div class="survey-section">
+            <p>How frequently do you choose to learn online?</p>
+
+            <label for="frequency-first">Rarely</label>
+            <input type="radio" id="frequency-first" name="frequency" value="rarely">
+            
+            <label for="frequency-second">Often</label>
+            <input type="radio" id="frequency-second" name="frequency" value="often">
+            
+            <label for="frequency-third">Always</label>
+            <input type="radio" id="frequency-third" name="frequency" value="always">
+        </div>
+            
+        <div class="survey-section">
+            <p>Which types of online IT courses do you prefer?</p>
+            <label for="favorite-course">Web Design</label>
+            <input type="checkbox"id="favorite-course" name="favorite" value="web design">
+            
+            <label for="favorite-course">Web Development</label>   
+            <input type="checkbox"id="favorite-course" name="favorite" value="web development">
+            
+            <label for="favorite-course">Digital Marketing</label>
+            <input type="checkbox"id="favorite-course" name="favorite" value="digital marketing">
+            
+            <label for="favorite-course">Cyber Security</label>    
+            <input type="checkbox"id="favorite-course" name="favorite" value="cyber security">
+            
+            <label for="favorite-course">Mobile Development</label>
+            <input type="checkbox"id="favorite-course" name="favorite" value="mobile development">
+            
+            <label for="favorite-course">Management</label>  
+            <input type="checkbox"id="favorite-course" name="favorite" value="management">
+            
+            <label for="favorite-course">UX/UI</label>  
+            <input type="checkbox"id="favorite-course" name="favorite" value="user experience">
+        </div>
+            
+        <div class="survey-section">
+            <label id="form-comment">Comments</label>
+            <textarea id="form-comment" placeholder="Enter your comments here"></textarea>
+        </div>
+            
+        <div class="survey-section">
+            <button type="submit" id="submit" value="Submit">Submit</button>
+        </div>
+    </form><!-- #survey-form ends here-->
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
