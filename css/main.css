@@ -67,7 +67,6 @@ p {
 form {
     background-color: #684434;
     opacity: 0.8;
-    width: 600px;
     margin: 50px auto;
     padding: 30px 20px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
@@ -116,6 +115,37 @@ button {
     padding: 0 40px;
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablet styles here */
+
+  form {
+      width: 600px;
+      margin: 50px auto;
+      padding: 30px 20px;
+  }
+
+  .survey-section {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  #dropdown,
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    margin: auto;
+  }
 }
 
 
