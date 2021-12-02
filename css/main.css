@@ -10,7 +10,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    position: relative;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -36,6 +42,98 @@ h1,
 p {
     margin-bottom: 1rem;
 }
+
+/* Styling the Header */
+
+.header {
+    padding: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+#title {
+    font-size: 2rem;
+    color: #291913;
+    font-weight: 600;
+}
+
+#description {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Styling the Form */
+
+form {
+    background-color: #684434;
+    opacity: 0.8;
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    color: #D9C1C5;
+    width: 100%;
+}
+
+.survey-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit);
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#dropdown,
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin: 0 0 10px;
+    border: solid 1px #454545;
+    border-top: none;
+    border-radius: 5px;
+    display: block;
+    width: 70%;
+    font-size: 14px;
+    color: #777;
+    font-family: "PT Serif Caption";
+    text-transform: uppercase;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background: #365210;
+    color: #D9C1C5;
+    font-size: 1rem;
+    padding: 0 40px;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
