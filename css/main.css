@@ -75,13 +75,8 @@ form {
 }
 
 .survey-section {
-    display: grid;
-    align-items: center;
-    grid-template-columns: inherit;
-    text-align: left;
-    font-weight: 600;
-    margin-bottom: 25px;
-    padding-bottom: 1rem;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
 }
 
 #dropdown,
@@ -100,6 +95,23 @@ textarea {
     color: #777;
     font-family: "PT Serif Caption";
     text-transform: uppercase;
+    outline: 0;
+}
+
+#frequency-first,
+#frequency-second,
+#frequency-third,
+.input-checkbox {
+ margin-right: 0.5rem;
+ min-height: 1rem;
+ min-width: 1rem;
+}
+
+label {
+ display: flex;
+ align-items: center;
+ font-size: 1rem;
+ margin-bottom: 0.5rem;
 }
 
 textarea {
